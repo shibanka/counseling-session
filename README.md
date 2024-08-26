@@ -15,9 +15,10 @@ Patients can securely update their personal data. Counselors can access the data
 
 Emission of events when patient data is updated, allowing for easy tracking and logging. Access Control:
 
-Strong access control mechanisms ensure that only authorized users can perform specific actions (e.g., updating or viewing patient data). Flowchart Below is a simplified flowchart illustrating the interaction between the owner, patients, and counselors:
+Strong access control mechanisms ensure that only authorized users can perform specific actions (e.g., updating or viewing patient data).
 
-+-------------------+ | Contract Owner | +-------------------+ | | (Add Patient) v +-------------------+ | Patient | +-------------------+ | | (Update Data) v +-------------------+ | Patient Data | +-------------------+ | | (Access Data) v +-------------------+ | Counselor | +-------------------+ Contract Details State Variables owner: The address of the contract owner. patients: A mapping to track registered patients. counselors: A mapping to track registered counselors. patientData: A mapping to store data for each patient. Events PatientDataUpdated: Emitted when a patient's data is updated. Functions constructor(): Initializes the contract by setting the deployer as the owner.
+
+Contract Details State Variables owner: The address of the contract owner. patients: A mapping to track registered patients. counselors: A mapping to track registered counselors. patientData: A mapping to store data for each patient. Events PatientDataUpdated: Emitted when a patient's data is updated. Functions constructor(): Initializes the contract by setting the deployer as the owner.
 
 setPatientData(string memory _patientData): Allows a registered patient to update their data. Emits the PatientDataUpdated event.
 
@@ -40,9 +41,17 @@ Registered patients can call setPatientData to update their personal data. Acces
 Registered counselors can call getCounselorData to access patient data. Security Considerations Only the owner can register patients and counselors. Only registered patients can update their data. Only registered counselors can access patient data. Contact Details For further information, support, or inquiries, please contact the contract owners:
 
 Name: Shibanka Dey 
+
+
 Email: deyshibanka@gmail.com 
+
+
 Phone: 7005116071 
+
+
 Contract Address- 0x6d897563d978dda8a1cdaa8f7f7150c5698a3399
+
+
 
 ![Screenshot 2024-08-23 161748](https://github.com/user-attachments/assets/bd073156-a36c-4011-9287-e1d702f06758)
 
